@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Moneo</title>
+    <link>https://localhost:1313/</link>
+    <description>Recent content in Home on Moneo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Dec 2018 15:04:45 +0300</lastBuildDate>
+    
+	<atom:link href="https://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Career</title>
+      <link>https://localhost:1313/career/</link>
+      <pubDate>Sun, 02 Dec 2018 01:47:46 +0300</pubDate>
+      
+      <guid>https://localhost:1313/career/</guid>
+      <description>Career    Anything else want to talk hello@itsmoneo.com    Teamplay is at the heart of what we do. Who is behind Moneo? Moneo is an idea that consists of people. We are doers, enablers, problem solvers, approachers, disrupters, stargazers, communicators, developers, dreamers, future shapers, and leaders...
+What does Moneo do? We develop, apply, maintain, scale, test, implement, research and execute... See the job openings and seize the opportunity to be one of us.</description>
+    </item>
+    
+    <item>
+      <title>Company</title>
+      <link>https://localhost:1313/company/</link>
+      <pubDate>Sun, 02 Dec 2018 01:47:46 +0300</pubDate>
+      
+      <guid>https://localhost:1313/company/</guid>
+      <description>We are Moneo We cooperate and consolidate with you to establish future-proof digital products.
+ Our Story With its many years of combined professional experience on web and mobile development, Moneo has been around for the better part of 2010’s. Team members have been in the digital arena as doers, enablers, problem solvers and leaders. Our expertise in cloud platforms, startup ecosystem, software development, B2B needfinding, payment structures and e-commerce integrations promise you a frictionless sytem from the ground up.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://localhost:1313/contact/</link>
+      <pubDate>Sun, 02 Dec 2018 01:47:46 +0300</pubDate>
+      
+      <guid>https://localhost:1313/contact/</guid>
+      <description>Contact us Mail Us Talk anything that you want
+hello@itsmoneo.com
+ Our Office Drink a coffee?
+ Esentepe Mahallesi Talatpaşa Cad.
+No:5 34394 Şişli / İstanbul Show on Map   Phone Let&#39;s talk
++90 212 951 09 92   Let&#39;s talk! Let us use our unique expertise and renowned talents for your product or business. Tell us briefly about your idea and we make sure to get back to you real soon.</description>
+    </item>
+    
+    <item>
+      <title>Services</title>
+      <link>https://localhost:1313/services/</link>
+      <pubDate>Sun, 02 Dec 2018 01:47:46 +0300</pubDate>
+      
+      <guid>https://localhost:1313/services/</guid>
+      <description>Services           Back-End
+Development About Our Service Your business deserves to be handled nothing less than perfectly. Exceptional engineering practices, business oriented solution providing, customer tailored infrastructural and software improvements and industry-wide expertise is what makes Moneo a reliable and stable back-end partner for your organization.
+We Love Scalable Architecture, SOLID Principles, Test-Driven Development, RESTful API design / Integration
+    Front-End</description>
+    </item>
+    
+    <item>
+      <title>Technologies</title>
+      <link>https://localhost:1313/technologies/</link>
+      <pubDate>Sun, 02 Dec 2018 01:47:46 +0300</pubDate>
+      
+      <guid>https://localhost:1313/technologies/</guid>
+      <description>Technologies  Technical integrity all the way. From ground up. Businesses deserve to be handled flawlessly. Exceptional engineering practices of Moneo provides you with tailored back-end solutions that are globally reliable and stable.
+PHP Node.js Go Laravel Symfony    Software Craftmanship. Functionality at its best. The product or the business; either of the shines at first sight. Businesses and products alike deserve the best software craftsmanship and the highest quality of code.</description>
+    </item>
+    
+    <item>
+      <title>PHPKonf</title>
+      <link>https://localhost:1313/events/phpkonf-istanbul-php-conference-2019/</link>
+      <pubDate>Sun, 02 Dec 2018 01:31:13 +0300</pubDate>
+      
+      <guid>https://localhost:1313/events/phpkonf-istanbul-php-conference-2019/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
