@@ -35,15 +35,15 @@
         <nav class="mobile-nav">
             <ul>
                 
-                  <li><a href="https://itsmoneo.com/company.html" title="Company" class="active">Company</a></li>
+                  <li class="mobile-link"><a href="https://itsmoneo.com/company.html" title="Company" class="active">Company</a></li>
                 
-                  <li><a href="https://itsmoneo.com/services.html" title="Services" >Services</a></li>
+                  <li class="mobile-link"><a href="https://itsmoneo.com/services.html" title="Services" >Services</a></li>
                 
-                  <li><a href="https://itsmoneo.com/technologies.html" title="Technologies" >Technologies</a></li>
+                  <li class="mobile-link"><a href="https://itsmoneo.com/technologies.html" title="Technologies" >Technologies</a></li>
                 
-                  <li><a href="https://itsmoneo.com/career.html" title="Career" >Career</a></li>
+                  <li class="mobile-link"><a href="https://itsmoneo.com/career.html" title="Career" >Career</a></li>
                 
-                  <li><a href="https://itsmoneo.com/contact.html" title="Contact" >Contact</a></li>
+                  <li class="mobile-link"><a href="https://itsmoneo.com/contact.html" title="Contact" >Contact</a></li>
                 
             </ul>
         </nav>
@@ -81,21 +81,23 @@
 <section class="promo">
     <h1>Trained to solve, adapted to achieve.</h1>
     <section class="boxes">
-        <article class="svg-promo-what-we-do">
-            <h1>What We Do</h1>
-            <p>We help successful businesses to initiate, escalate their game and launch business they created to great effort.</p>
-            <a href="/services.html">Services <i class="icon-caret"></i></a>
-        </article>
-        <article class="svg-promo-how-we-do-it">
-            <h1>How We Do</h1>
-            <p>We use our expertise for long-lasting infrastructural development, make sure it is stable and provide businesses with cutting-edge tech.</p>
-            <a href="/technologies.html">Technologies <i class="icon-caret"></i></a>
-        </article>
-        <article class="svg-promo-our-works">
-            <h1>Works</h1>
-            <p>We were very lucky to have the chance to work with exceptional and hardworking businesses. Listen to them.</p>
-            <a href="/">Our Works <i class="icon-caret"></i></a>
-        </article>
+        <div class="boxes-inner" id="promo-boxes">
+            <article class="svg-promo-what-we-do">
+                <h1>What We Do</h1>
+                <p>We help successful businesses to initiate, escalate their game and launch business they created to great effort.</p>
+                <a href="/services.html">Services <i class="icon-caret"></i></a>
+            </article>
+            <article class="svg-promo-how-we-do-it" id="centered-promo">
+                <h1>How We Do</h1>
+                <p>We use our expertise for long-lasting infrastructural development, make sure it is stable and provide businesses with cutting-edge tech.</p>
+                <a href="/technologies.html">Technologies <i class="icon-caret"></i></a>
+            </article>
+            <article class="svg-promo-our-works">
+                <h1>Works</h1>
+                <p>We were very lucky to have the chance to work with exceptional and hardworking businesses. Listen to them.</p>
+                <a href="/">Our Works <i class="icon-caret"></i></a>
+            </article>
+        </div>
     </section>
 </section>
 
@@ -157,15 +159,5 @@
 <script src="/assets/js/app.js"></script>
 <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
 <script src="/assets/js/search.js"></script>
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63786228-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-63786228-2');
-</script>
 </body>
 </html>

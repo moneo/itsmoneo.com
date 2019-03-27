@@ -36,15 +36,15 @@
         <nav class="mobile-nav">
             <ul>
                 
-                  <li><a href="https://itsmoneo.com/company.html" title="Company" >Company</a></li>
+                  <li class="mobile-link"><a href="https://itsmoneo.com/company.html" title="Company" >Company</a></li>
                 
-                  <li><a href="https://itsmoneo.com/services.html" title="Services" >Services</a></li>
+                  <li class="mobile-link"><a href="https://itsmoneo.com/services.html" title="Services" >Services</a></li>
                 
-                  <li><a href="https://itsmoneo.com/technologies.html" title="Technologies" >Technologies</a></li>
+                  <li class="mobile-link"><a href="https://itsmoneo.com/technologies.html" title="Technologies" >Technologies</a></li>
                 
-                  <li><a href="https://itsmoneo.com/career.html" title="Career" >Career</a></li>
+                  <li class="mobile-link"><a href="https://itsmoneo.com/career.html" title="Career" >Career</a></li>
                 
-                  <li><a href="https://itsmoneo.com/contact.html" title="Contact" >Contact</a></li>
+                  <li class="mobile-link"><a href="https://itsmoneo.com/contact.html" title="Contact" >Contact</a></li>
                 
             </ul>
         </nav>
@@ -81,18 +81,20 @@
 <section class="featured-projects">
     <h1>Worked hard. Got results.</h1>
     <nav class="project-card">
-        <a>
-            <img src="/assets/image/project/marketplace.jpg" alt="">
-            <h1>Marketplace</h1>
-        </a>
-        <a>
-            <img src="/assets/image/project/tracking.jpg" alt="">
-            <h1>Tracking System</h1>
-        </a>
-        <a>
-            <img src="/assets/image/project/payment.jpg" alt="">
-            <h1>Payment System</h1>
-        </a>
+        <div class="project-card-inside" id="project-cards">
+            <a>
+                <img src="/assets/image/project/marketplace.jpg" alt="">
+                <h1>Marketplace</h1>
+            </a>
+            <a id="centered-project">
+                <img src="/assets/image/project/tracking.jpg" alt="">
+                <h1>Tracking System</h1>
+            </a>
+            <a>
+                <img src="/assets/image/project/payment.jpg" alt="">
+                <h1>Payment System</h1>
+            </a>
+        </div>
     </nav>
 </section>
 
@@ -167,15 +169,5 @@
 <script src="/assets/js/app.js"></script>
 <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
 <script src="/assets/js/search.js"></script>
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63786228-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-63786228-2');
-</script>
 </body>
 </html>
