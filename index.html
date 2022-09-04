@@ -1,178 +1,1494 @@
-<!DOCTYPE html>
-<html lang="en-us"><head>
-	<meta name="generator" content="Hugo 0.51" />
+<!doctype html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Moneo | Home</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moneo - Outsource Software & Product Development Company</title>
     <meta type="description" content="We offer you the expertise you’ve been looking for to build stable, scalable and, advanced products. No compromises, only promises that are held.">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <meta property="og:title" content="Home">
-    <meta property="og:site_name" content="Moneo">
-    <meta property="og:url" content="https://itsmoneo.com/">
-    <meta property="og:description" content="We offer you the expertise you’ve been looking for to build stable, scalable and, advanced products. No compromises, only promises that are held.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://itsmoneo.com/image/logo.svg">
-</head><body><header class="">
-    <section class="container-root">
-        <a href="https://itsmoneo.com/" class="logo">
-            <img src="/assets/image/logo.svg" alt="moneo">
+
+    <link rel="icon" href="./assets/images/favicon.svg">
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Moneo - Outsource Software & Product Development Company" />
+    <meta property="og:description" content="We offer you the expertise you’ve been looking for to build stable, scalable and, advanced products. No compromises, only promises that are held." />
+    <meta property="og:url" content="https://itsmoneo.com/" />
+    <meta property="og:site_name" content="Moneo" />
+    <meta property="og:image" content="./assets/images/social.jpg"/>
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="We offer you the expertise you’ve been looking for to build stable, scalable and, advanced products. No compromises, only promises that are held." />
+    <meta name="twitter:title" content="Moneo - Outsource Software & Product Development Company" />
+    <meta name="twitter:site" content="@itsmoneo" />
+    <meta name="twitter:creator" content="@itsmoneo" />
+    <meta name="twitter:image" content="./assets/images/social.jpg"/>
+
+    <link rel="canonical" href="https://itsmoneo.com/" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com?plugins=line-clamp"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Raleway', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#06141B',
+                        gray: {
+                            1: '#333333',
+                            2: '#4F4F4F',
+                            3: '#828282',
+                            4: '#BDBDBD',
+                            5: '#E0E0E0',
+                            6: '#F2F2F2',
+                        },
+                        cerulean: {
+                            500: '#14A2DF',
+                            700: '#1465A5',
+                        },
+                        royalblue: {
+                            0: '#F6FBFD',
+                            100: '#E7F7FD',
+                            200: '#C3E7FB'
+                        },
+                        yellow: '#FFBC27',
+                        orange: '#FF7425',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            html {
+                scroll-behavior: smooth;
+            }
+
+            :root {
+                font-variant-ligatures: none;
+            }
+
+            .nav-item {
+                @apply block p-2 text-gray-6 text-sm font-semibold tracking-[.02em];
+            }
+
+            .page-title {
+                @apply md:text-[52px] md:leading-[60px] text-5xl;
+
+                background: linear-gradient(269.21deg, #14A2DF 3.6%, #5ECEFF 78.92%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+
+            h2 {
+                @apply font-bold text-gray-1 md:text-5xl text-4xl md:leading-[56px];
+            }
+
+            h4 {
+                @apply text-2xl font-semibold text-gray-1;
+            }
+
+            h5 {
+                @apply md:text-xl text-lg font-semibold text-gray-1;
+            }
+
+            .heading-title {
+                @apply text-cerulean-500 text-xs font-bold tracking-[.02em] uppercase;
+            }
+
+            .technologies-tab-btn {
+                @apply font-semibold py-4 text-gray-1 rounded md:h-20 h-16 px-10 text-lg tracking-[.02em] md:w-auto w-full;
+            }
+            .technologies-tab-btn:not(.active):hover {
+                @apply bg-gray-6;
+            }
+            .technologies-tab-btn.active {
+                @apply bg-primary text-gray-6;
+            }
+
+            .technologies-tab {
+                @apply max-w-[1180px] hidden md:flex-row flex-col justify-between mx-auto pt-10 md:pb-20 pb-8 md:px-0 px-6;
+            }
+            .technologies-tab.active {
+                @apply flex;
+            }
+
+            .happy-client-box .black {
+                @apply hidden;
+            }
+            .happy-client-box:hover .black {
+                @apply block;
+            }
+            .happy-client-box:hover .current {
+                @apply hidden;
+            }
+
+            .backdrop {
+                @apply absolute inset-0 bg-black bg-opacity-60 transition duration-300;
+            }
+            .backdrop.passive {
+                @apply bg-opacity-0;
+            }
+            @media (max-width: 768px) {
+                .backdrop {
+                    @apply hidden;
+                }
+            }
+        }
+    </style>
+</head>
+<body class="antialiased lining-nums">
+<div class="bg-primary md:h-[900px] h-[1024px]">
+    <img src="./assets/images/hero-bg.png" class="absolute z-0 top-0 md:block hidden max-h-[757px] left-0 right-0 mx-auto" alt="">
+    <nav class="relative z-10 max-w-[1180px] mx-auto md:h-20 h-16 flex items-center justify-between xl:px-0 px-6 md:pt-20 pt-6">
+        <a href="">
+            <img src="./assets/images/logo.svg" class="md:w-auto w-24" alt="Moneo" title="Moneo">
         </a>
-        <nav>
-      			
-            
-              <a href="https://itsmoneo.com/company.html" title="Company" >Company</a>
-            
-              <a href="https://itsmoneo.com/services.html" title="Services" >Services</a>
-            
-              <a href="https://itsmoneo.com/technologies.html" title="Technologies" >Technologies</a>
-            
-              <a href="https://itsmoneo.com/career.html" title="Career" >Career</a>
-            
-              <a href="https://itsmoneo.com/contact.html" title="Contact" >Contact</a>
-            
-        </nav>
-        <i class="nav-button"><span></span></i>
-        <nav class="mobile-nav">
-            <ul>
-                
-                  <li class="mobile-link"><a href="https://itsmoneo.com/company.html" title="Company" >Company</a></li>
-                
-                  <li class="mobile-link"><a href="https://itsmoneo.com/services.html" title="Services" >Services</a></li>
-                
-                  <li class="mobile-link"><a href="https://itsmoneo.com/technologies.html" title="Technologies" >Technologies</a></li>
-                
-                  <li class="mobile-link"><a href="https://itsmoneo.com/career.html" title="Career" >Career</a></li>
-                
-                  <li class="mobile-link"><a href="https://itsmoneo.com/contact.html" title="Contact" >Contact</a></li>
-                
-            </ul>
-        </nav>
-    </section>
-</header>
-<div id="content">
-<section class="hero" id="home">
-    <article>
-        <h1 class="slogan"></h1>
-        <p class="slogan-desc"></p>
-        <a href="/services.html" class="btn">Our Services</a>
-    </article>
-    <img src="/assets/image/hero/we-build-web.svg" alt="">
-</section>
-
-<section class="services">
-    <article>
-        <h1>Flawless services for <br/>excellent products!</h1>
-        <p>We offer you the expertise you’ve been looking for to build stable, scalable and, advanced products. No compromises, only promises that are held.</p>
-        <div class="services-items">
-            <ul>
-                <li class="svg-service-web">Web Development</li>
-                <li class="svg-service-mobile">Mobile Development</li>
-                <li class="svg-service-cloud">Cloud Services</li>
-                <li class="svg-service-business">Business Analysis</li>
-                <li class="svg-service-project">Project Management</li>
-                <li class="svg-service-product">Product Design</li>
-                <li class="svg-service-quality">Quality Assurance</li>
-                <li class="svg-service-maintenance">Maintenance Services</li>
-            </ul>
-        </div>
-        <a class="btn" href="/services.html">Our Services</a>
-    </article>
-</section>
-
-<section class="featured-projects">
-    <h1>Worked hard. Got results.</h1>
-    <nav class="project-card">
-        <div class="project-card-inside" id="project-cards">
-            <a>
-                <img src="/assets/image/project/marketplace.jpg" alt="">
-                <h1>Marketplace</h1>
-            </a>
-            <a id="centered-project">
-                <img src="/assets/image/project/tracking.jpg" alt="">
-                <h1>Tracking System</h1>
-            </a>
-            <a>
-                <img src="/assets/image/project/payment.jpg" alt="">
-                <h1>Payment System</h1>
-            </a>
+        <div class="md:flex hidden gap-8 pr-8">
+            <a href="#case-studies" class="nav-item">Case Studies</a>
+            <a href="#contact" class="nav-item">Contact</a>
         </div>
     </nav>
-</section>
 
-<section class="clients">
-    <h1>Happy Clients</h1>
-    <section class="grid">
-        <img src="/assets/image/client/ibb.png" alt="">
-        <img src="/assets/image/client/kitapyurdu.png" alt="">
-        <img src="/assets/image/client/dugun.png" alt="">
-        <img src="/assets/image/client/lilakutu.svg" alt="" style="width:120px">
-        <img src="/assets/image/client/yeniben.png" alt="" style="width:120px;padding-bottom:10px">
-        <img src="/assets/image/client/palex.png" alt="" style="padding-top:15px">
-    </section>
-</section>
-
-
-
-        </div><footer>
-    <section class="event">
-        <section class="container-root">
-            <h1>Events</h1>
-            <nav class="list-navigation">
-                <a href="#" class="prev disabled"></a>
-                <a href="#" class="next"></a>
-            </nav>
-        </section>
-        <ul class="event-list owl-carousel">
-            
-            <li>
-                <a href=" https://phpkonf.org "  target="_blank" >
-                    <p class="date">4<span>May</span></p>
-                    <p class="title">PHPKonf</p>
-                    <p class="location">at&nbsp;Kadir Has University</p>
+    <div class="relative z-10 overflow-hidden md:mt-[140px] mt-10 md:px-0 px-6 md:pb-0 pb-8">
+        <div class="max-w-[1180px] w-full mx-auto flex md:flex-row flex-col md:justify-between">
+            <div class="lg:min-w-[500px] flex-1 md:mb-0 mb-10 lg:mr-24 md:mr-20 md:pb-8">
+                <h4 class="font-semibold text-2xl text-gray-6 mb-2">Outsource</h4>
+                <h1 class="page-title font-bold mb-6">Software & Product Development Company</h1>
+                <p class="text-lg font-medium text-gray-4 mb-6 lg:max-w-[464px]">We offer you the expertise you’ve been looking for to build stable, scalable and, advanced products. No compromises, only promises that are held.</p>
+                <a href="#contact" class="flex justify-center bg-cerulean-500 hover:bg-cerulean-700 rounded py-4 text-gray-6 font-semibold text-base max-w-[166px] w-full">
+                    Contact Us
                 </a>
-            </li>
-            
-        </ul>
-    </section>
+            </div>
+            <div class="relative">
+                <div class="hero-slider flex gap-x-1">
+                    <div class="relative rounded-lg mb-2.5 w-full md:mr-5" style="background: radial-gradient(101.99% 101.99% at 50% 50%, #B0FCFF 0%, #52696A 100%);">
+                        <img src="./assets/images/karaca-mockup.png" alt="Karaca Home">
+                        <div class="backdrop passive"></div>
+                    </div>
+                    <div class="relative rounded-lg mb-2.5 w-full md:mr-5" style="background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #FFDBBF 100%);">
+                        <img src="./assets/images/kitapyurdu-mockup.png" alt="Kitapyurdu">
+                        <div class="backdrop"></div>
+                    </div>
+                    <div class="relative rounded-lg mb-2.5 w-full md:mr-5" style="background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #FFECB1 100%);">
+                        <img src="./assets/images/kommunity-mockup.png" alt="Kommunity">
+                        <div class="backdrop"></div>
+                    </div>
+                </div>
 
-    <article class="contact">
-        <h1>Let's talk!</h1>
-        <section class="block">
-            <section>
-                <h1>E-Mail</h1>
-                <a href="mailto:hello@itsmoneo.com">hello@itsmoneo.com</a>
-            </section>
-            <section>
-                <h1>Phone</h1>
-                <a href="tel:+902129510992">+90 212 951 09 92</a>
-            </section>
-            <section>
-                <h1>Address</h1>
-                <address>
-                    Esentepe Mah. Talatpaşa Cad.<br>No:5 34394 Şişli / İstanbul
-                    <a target="_blank" href="https://goo.gl/maps/MiPLgdPfc7t" target="_blank">Get Directions</a>
-                </address>
-            </section>
-            <section>
-                <h1>Follow us on</h1>
-                <nav class="social">
-                    <a href="https://facebook.com/itsmoneo" target="_blank">Fb</a>
-                    <a href="https://twitter.com/itsmoneo" target="_blank">Tw</a>
-                    <a href="https://instagram.com/moneo_official" target="_blank">Ig</a>
-                    <a href="https://linkedin.com/company/itsmoneo" target="_blank">In</a>
-                </nav>
-            </section>
-        </section>
-    </article>
+                <div class="flex justify-between items-center absolute max-w-[584px] left-0 right-0 md:pl-1">
+                    <div id="hero-slider-title" class="text-white font-bold text-lg">Karaca</div>
+                    <div class="flex items-center gap-2">
+                        <button id="hero-prev-btn">
+                            <img src="./assets/icons/arrow-left.svg" class="passive" alt="">
+
+                            <img src="./assets/icons/arrow-right.svg" class="active hidden transform rotate-180" alt="">
+                        </button>
+                        <button id="hero-next-btn">
+                            <img src="./assets/icons/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="max-w-[1180px] mx-auto -mt-16 bg-white md:pt-20 pt-12 md:px-0 px-6">
+    <div class="max-w-[980px] mx-auto">
+        <div class="max-w-[738px] md:mb-16 mb-10">
+            <div class="heading-title md:mb-10 mb-6">Engagement Models</div>
+            <h2>We can develop for you in different models</h2>
+        </div>
+        <div class="flex md:gap-16 gap-10 flex-wrap justify-between">
+            <div class="md:max-w-[380px]">
+                <img data-src="./assets/images/solution-1.png" class="mb-4 lazy" alt="">
+                <h4 class="mb-4">Extended Team</h4>
+                <p class="text-base line-clamp-3 text-ellipsis text-gray-2 mb-3 extended-team">Hire us as an extended team of your organization. Each and every team member here at Moneo has been given a vital role of different organizations from conglomerates to start-ups. Over the years, we have worked as remote workers, freelancers, in-housers and contractors. Harness this unique expertise and let us provide your business with a reliable team.</p>
+                <button onclick="readMore(this, '.extended-team')" class="flex items-center space-x-2 group">
+                    <span class="text-base font-semibold text-cerulean-500 group-hover:text-cerulean-700">Read more</span>
+
+                    <svg width="24" height="24" class="text-cerulean-500 group-hover:text-cerulean-700 transform transition-rotate duration-150 rotate-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 16.5L4.5 8.99995L5.55 7.94995L12 14.4L18.45 7.94995L19.5 8.99995L12 16.5Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="md:max-w-[428px] md:p-6">
+                <img data-src="./assets/images/solution-2.png" class="mb-4 lazy" alt="">
+                <h4 class="mb-4">Managed Products</h4>
+                <p class="text-base line-clamp-3 text-ellipsis text-gray-2 mb-3 managed-products">Hire us as the dedicated product managers for your organization. If you are in search of a professional and dependable team for a new, side or a booming product, Moneo is here to get it up-and-running flawlessly with cutting-edge technology and solid proficiency.</p>
+                <button onclick="readMore(this, '.managed-products')" class="flex items-center space-x-2 group">
+                    <span class="text-base font-semibold text-cerulean-500 group-hover:text-cerulean-700">Read more</span>
+
+                    <svg width="24" height="24" class="text-cerulean-500 group-hover:text-cerulean-700 transform transition-rotate duration-150 rotate-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 16.5L4.5 8.99995L5.55 7.94995L12 14.4L18.45 7.94995L19.5 8.99995L12 16.5Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="md:max-w-[380px]">
+                <img data-src="./assets/images/solution-3.png" class="mb-4 lazy" alt="">
+                <h4 class="mb-4">Managed Services</h4>
+                <p class="text-base line-clamp-3 text-ellipsis text-gray-2 mb-3 managed-services">Hire us as the managed services providers on a proactive basis. Together with your dedicated team, we determine the services your business needs and customize the scope of requirements in a sustainable and profitable way that suits your urgencies and priorities the best.</p>
+                <button onclick="readMore(this, '.managed-services')" class="flex items-center space-x-2 group">
+                    <span class="text-base font-semibold text-cerulean-500 group-hover:text-cerulean-700">Read more</span>
+
+                    <svg width="24" height="24" class="text-cerulean-500 group-hover:text-cerulean-700 transform transition-rotate duration-150 rotate-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 16.5L4.5 8.99995L5.55 7.94995L12 14.4L18.45 7.94995L19.5 8.99995L12 16.5Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="md:max-w-[428px] md:p-6 p-4 bg-cerulean-500">
+                <img data-src="./assets/images/solution-4.png" class="mb-4 lazy" alt="">
+                <h4 class="mb-4 text-white">Custom Tailored Service</h4>
+                <p class="text-base line-clamp-3 text-ellipsis text-white mb-3">Hire us as the tailored service and technology partner. If your business is in need of a custom-designed services, let’s talk about it.</p>
+                <a href="#contact" class="flex items-center text-base font-semibold text-white">
+                    <span class="mr-2">Contact us</span>
+                    <img data-src="./assets/icons/chevron-right.svg" class="lazy" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="md:mt-[140px] mt-20">
+        <div class="heading-title md:mb-10 mb-6">Services</div>
+        <div class="flex md:flex-row flex-col flex-shrink justify-between">
+            <div class="md:max-w-[380px] md:mb-0 mb-8">
+                <h2 class="md:mb-12 mb-8">Services we offer expertise</h2>
+                <img data-src="./assets/images/dynorender.png" class="md:w-auto w-full lazy" alt="">
+            </div>
+
+            <div class="flex flex-wrap md:gap-x-10 md:gap-y-14 gap-y-10 max-w-[680px]">
+                <div class="max-w-[320px] w-full">
+                    <h4 class="md:mb-6 mb-4">Back End Development</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <img data-src="./assets/icons/check-circle.svg" class="lazy mr-2" alt="">
+                            <div class="text-base font-medium text-gray-2">Scalable Architecture</div>
+                        </div>
+                        <div class="flex items-center">
+                            <img data-src="./assets/icons/check-circle.svg" class="lazy mr-2" alt="">
+                            <div class="text-base font-medium text-gray-2">REST Services</div>
+                        </div>
+                        <div class="flex items-center">
+                            <img data-src="./assets/icons/check-circle.svg" class="lazy mr-2" alt="">
+                            <div class="text-base font-medium text-gray-2">Microservices</div>
+                        </div>
+                        <div class="flex items-center">
+                            <img data-src="./assets/icons/check-circle.svg" class="lazy mr-2" alt="">
+                            <div class="text-base font-medium text-gray-2">MVC Architecture</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-[320px] w-full">
+                    <h4 class="md:mb-6 mb-4">Front End Development</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <img data-src="./assets/icons/check-circle.svg" class="mr-2 lazy" alt="">
+                            <div class="text-base font-medium text-gray-2">Single Page Applications</div>
+                        </div>
+                        <div class="flex items-center">
+                            <img data-src="./assets/icons/check-circle.svg" class="mr-2 lazy" alt="">
+                            <div class="text-base font-medium text-gray-2">PSD / Figma to HTML</div>
+                        </div>
+                        <div class="flex items-center">
+                            <img data-src="./assets/icons/check-circle.svg" class="mr-2 lazy" alt="">
+                            <div class="text-base font-medium text-gray-2">Responsive Design</div>
+                        </div>
+                        <div class="flex items-center">
+                            <img data-src="./assets/icons/check-circle.svg" class="mr-2 lazy" alt="">
+                            <div class="text-base font-medium text-gray-2">Web Performance</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-[320px] w-full">
+                    <h4 class="md:mb-6 mb-4">Cloud</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <img data-src="./assets/icons/check-circle.svg" class="mr-2 lazy" alt="">
+                            <div class="text-base font-medium text-gray-2">Amazon Web Services</div>
+                        </div>
+                        <div class="flex items-center">
+                            <img data-src="./assets/icons/check-circle.svg" class="mr-2 lazy" alt="">
+                            <div class="text-base font-medium text-gray-2">Google Cloud</div>
+                        </div>
+                        <div class="flex items-center">
+                            <img data-src="./assets/icons/check-circle.svg" class="mr-2 lazy" alt="">
+                            <div class="text-base font-medium text-gray-2">Microsoft Azure</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-[320px] w-full">
+                    <h4 class="md:mb-6 mb-4">DevOps</h4>
+                    <div class="grid grid-cols-2 gap-y-4 gap-x-6">
+                        <div class="flex items-center">
+                            <img data-src="./assets/icons/check-circle.svg" class="mr-2 lazy" alt="">
+                            <div class="text-base font-medium text-gray-2">CI / CD</div>
+                        </div>
+                        <div class="flex items-center">
+                            <img data-src="./assets/icons/check-circle.svg" class="mr-2 lazy" alt="">
+                            <div class="text-base font-medium text-gray-2">Kubernetes</div>
+                        </div>
+                        <div class="flex items-center">
+                            <img data-src="./assets/icons/check-circle.svg" class="mr-2 lazy" alt="">
+                            <div class="text-base font-medium text-gray-2">Monitoring</div>
+                        </div>
+                        <div class="flex items-center">
+                            <img data-src="./assets/icons/check-circle.svg" class="mr-2 lazy" alt="">
+                            <div class="text-base font-medium text-gray-2">Docker</div>
+                        </div>
+                        <div class="flex items-center">
+                            <img data-src="./assets/icons/check-circle.svg" class="mr-2 lazy" alt="">
+                            <div class="text-base font-medium text-gray-2">Cloud Native</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-[320px] w-full">
+                    <h4 class="md:mb-6 mb-4">Mobile Development</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <img data-src="./assets/icons/check-circle.svg" class="mr-2 lazy" alt="">
+                            <div class="text-base font-medium text-gray-2">React Native (iOS & Android)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="md:mt-[140px] mt-20 md:px-0 px-6" style="background: linear-gradient(180deg, #F6FBFD 0%, rgba(246, 251, 253, 0) 100%);">
+    <div class="h-px bg-royalblue-200 max-w-[1340px] mx-auto"></div>
+    <div class="max-w-[1180px] mx-auto md:pt-20 mt-12 md:pb-24 pb-8">
+        <div class="max-w-[968px] md:mb-16 mb-10">
+            <div class="heading-title md:mb-10 mb-6">Stages</div>
+            <h2 class="mb-6">Our development stages</h2>
+            <p class="text-base font-medium text-gray-2">Modernizing and restructuring software doesn’t have to mean rebuilding your product from scratch. We’ll carefully analyze your product and business situation to deliver a cost-effective solution.</p>
+        </div>
+        <div class="flex flex-wrap md:gap-x-5 md:gap-y-16 gap-y-10">
+            <div class="max-w-[380px] flex">
+                <div class="relative mr-4 text-xs text-cerulean-500 font-semibold tracking-[.02em] -top-px">
+                    1/6
+                </div>
+                <div>
+                    <h4 class="mb-4">Requirement gathering and analysis</h4>
+                    <p class="text-base font-medium text-gray-2">During this phase, all the relevant information is collected from the customer to develop a product as per their expectation. Any ambiguities must be resolved in this phase only.</p>
+                </div>
+            </div>
+            <div class="max-w-[380px] flex">
+                <div class="relative mr-4 text-xs text-cerulean-500 font-semibold tracking-[.02em] -top-px">
+                    2/6
+                </div>
+                <div>
+                    <h4 class="mb-4">Design</h4>
+                    <p class="text-base font-medium text-gray-2">In this phase, the requirement gathered in the SRS document is used as an input and software architecture that is used for implementing system development is derived.</p>
+                </div>
+            </div>
+            <div class="max-w-[380px] flex">
+                <div class="relative mr-4 text-xs text-cerulean-500 font-semibold tracking-[.02em] -top-px">
+                    3/6
+                </div>
+                <div>
+                    <h4 class="mb-4">Implementation or coding</h4>
+                    <p class="text-base font-medium text-gray-2">Implementation/Coding starts once the developer gets the Design document. The Software design is translated into source code. All the components of the software are implemented in this phase.</p>
+                </div>
+            </div>
+            <div class="max-w-[380px] flex">
+                <div class="relative mr-4 text-xs text-cerulean-500 font-semibold tracking-[.02em] -top-px">
+                    4/6
+                </div>
+                <div>
+                    <h4 class="mb-4">Testing</h4>
+                    <p class="text-base font-medium text-gray-2">Testing starts once the coding is complete and the modules are released for testing. In this phase, the developed software is tested thoroughly and any defects found are assigned to developers to get them fixed.</p>
+                </div>
+            </div>
+            <div class="max-w-[380px] flex">
+                <div class="relative mr-4 text-xs text-cerulean-500 font-semibold tracking-[.02em] -top-px">
+                    5/6
+                </div>
+                <div>
+                    <h4 class="mb-4">Deployment</h4>
+                    <p class="text-base font-medium text-gray-2">Once the product is tested, it is deployed in the production environment or first UAT (User Acceptance testing) is done depending on the customer expectation. If the customer finds the application as expected, then sign off is provided by the customer to go live.</p>
+                </div>
+            </div>
+            <div class="max-w-[380px] flex">
+                <div class="relative mr-4 text-xs text-cerulean-500 font-semibold tracking-[.02em] -top-px">
+                    6/6
+                </div>
+                <div>
+                    <h4 class="mb-4">Maintenance</h4>
+                    <p class="text-base font-medium text-gray-2">After the deployment of a product on the production environment, maintenance of the product i.e. if any issue comes up and needs to be fixed or any enhancement is to be done is taken care by the developers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="md:mt-[140px] mt-20 md:px-0 px-6 max-w-[1180px] mx-auto">
+    <div class="md:mb-16 mb-10">
+        <div class="heading-title md:mb-10 mb-6">Workflow</div>
+        <h2 class="mb-6">Product Oriented and <br> Excellence-driven Workflow</h2>
+        <div class="flex md:flex-row flex-col justify-between">
+            <p class="text-base font-medium text-gray-2 max-w-[900px] md:mb-0 mb-4">We ensure that you are one step ahead of your competitors by keeping our workflow up-to-date with current and correct methodologies in order to meet your needs.</p>
+            <div class="flex items-center md:justify-start justify-end space-x-4">
+                <button id="workflow-prev-btn" class="h-10 w-10 flex items-center justify-center rounded-full border border-gray-4">
+                    <img data-src="./assets/icons/arrow-left.svg" class="lazy passive" alt="">
+
+                    <img data-src="./assets/icons/arrow-right.svg" class="lazy active hidden transform rotate-180" alt="">
+                </button>
+                <button id="workflow-next-btn" class="h-10 w-10 flex items-center justify-center rounded-full border border-cerulean-500">
+                    <img data-src="./assets/icons/arrow-right.svg" class="lazy" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="workflow-slider flex gap-x-1">
+        <div class="md:px-10 px-8 md:pt-8 pt-6 max-w-[346px] md:h-[400px] h-[360px] bg-royalblue-0 md:mr-4">
+            <img data-src="./assets/images/agile.svg" class="lazy md:mb-6 mb-4" alt="">
+            <h5 class="md:mb-8 mb-6 tracking-[.02em]">Agile Methodology</h5>
+            <p class="text-base font-medium text-gray-2">
+                Collaboration, self-organization and cross-functional teams. These are not just fancy terms, they are the definition of how we approach Agile software development and be ready for unpredictibility.
+            </p>
+        </div>
+        <div class="md:px-10 px-8 md:pt-8 pt-6 max-w-[346px] md:h-[400px] h-[360px] bg-primary md:mr-4">
+            <img data-src="./assets/images/tech.svg" class="lazy md:mb-6 mb-4" alt="">
+            <h5 class="md:mb-8 mb-6 tracking-[.02em] text-gray-6">Up-to-date Technologies</h5>
+            <p class="text-base font-medium text-gray-6">
+                Each project comes with its own unique requirements. While we always keep that in mind, we also constantly follow best practises across the industry, with a twist: We only provide our customers with the proven ones.
+            </p>
+        </div>
+        <div class="md:px-10 px-8 md:pt-8 pt-6 max-w-[346px] md:h-[400px] h-[360px] bg-royalblue-0 md:mr-4">
+            <img data-src="./assets/images/solid.svg" class="lazy md:mb-6 mb-4" alt="">
+            <h5 class="md:mb-8 mb-6 tracking-[.02em]">SOLID Architecture</h5>
+            <p class="text-base font-medium text-gray-2">
+                Clean, sustainable, scalable and testable code is what we are proud of the most. That is why providing the state-of-the-art architecture to our customers is priority number one for us.
+            </p>
+        </div>
+        <div class="md:px-10 px-8 md:pt-8 pt-6 max-w-[346px] md:h-[400px] h-[360px] bg-primary md:mr-4">
+            <img data-src="./assets/images/style.svg" class="lazy md:mb-6 mb-4" alt="">
+            <h5 class="md:mb-8 mb-6 tracking-[.02em] text-gray-6">Software Craftmanship with Style</h5>
+            <p class="text-base font-medium text-gray-6">
+                You design apps, websites, services, interactions and workflows. We design how it all fits into one reliable, and maintainable clean codebase.
+            </p>
+        </div>
+        <div class="md:px-10 px-8 md:pt-8 pt-6 max-w-[346px] md:h-[400px] h-[360px] bg-royalblue-0 md:mr-4">
+            <img data-src="./assets/images/full-scale.svg" class="lazy md:mb-6 mb-4" alt="">
+            <h5 class="md:mb-8 mb-6 tracking-[.02em]">Full-scale Code Review</h5>
+            <p class="text-base font-medium text-gray-2">
+                Creating a non-threatening and collaborative environment for code review is an essential part of what we do. In order to excel at software development and create pixel-perfect systems, we offer you with conscious and systematic code review.
+            </p>
+        </div>
+        <div class="md:px-10 px-8 md:pt-8 pt-6 max-w-[346px] md:h-[400px] h-[360px] bg-primary md:mr-4">
+            <img data-src="./assets/images/test.svg" class="lazy md:mb-6 mb-4" alt="">
+            <h5 class="md:mb-8 mb-6 tracking-[.02em] text-gray-6">Repetitive Testing</h5>
+            <p class="text-base font-medium text-gray-6">
+                Either it be in the early stages of development or before a big release, we believe in the power of iterative testing. Our methodologies and tools we use to test ensure a healthy and functional system overall.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="md:mt-[140px] mt-20">
+    <div class="bg-royalblue-0 md:pt-20 pt-12 md:px-0 px-6">
+        <div class="max-w-[1180px] mx-auto mb-8">
+            <div class="max-w-[980px] md:mb-16 mb-10">
+                <div class="heading-title md:mb-10 mb-6">Technologıes</div>
+                <h2>Our technology & tool stack</h2>
+            </div>
+            <div class="flex flex-wrap gap-5">
+                <button
+                        onclick="changeActiveTab('backend')"
+                        class="backend technologies-tab-btn active">Back End Development</button>
+                <button
+                        onclick="changeActiveTab('frontend')"
+                        class="frontend technologies-tab-btn">Front End Development</button>
+                <button
+                        onclick="changeActiveTab('mobile')"
+                        class="mobile technologies-tab-btn">Mobile Development</button>
+                <button
+                        onclick="changeActiveTab('ui_ux')"
+                        class="ui_ux technologies-tab-btn">UI/UX Design</button>
+            </div>
+        </div>
+        <div class="h-px bg-royalblue-200 max-w-[1180px] mx-auto"></div>
+    </div>
+    <div>
+        <div class="backend technologies-tab active">
+            <div class="max-w-[480px] md:mb-0 mb-10 md:mr-24">
+                <p class="text-base font-medium text-gray-2 md:mb-8 mb-3">Businesses deserve to be handled flawlessly. Exceptional engineering practices of Moneo provides you with tailored back-end solutions that are globally reliable and stable.</p>
+            </div>
+            <div class="grid md:grid-cols-4 grid-cols-3 gap-y-6 gap-x-4 w-full" style="height: max-content">
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/php.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">PHP</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/node-js.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Node.js</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/mysql.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">MySQL</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/elasticsearch.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Elasticsearch</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/laravel.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Laravel</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/go.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Go</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/docker.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Docker</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/aws.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">AWS</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/redis.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Redis</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/mongo-db.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">MongoDB</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/symfony.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Symfony</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="frontend technologies-tab">
+            <div class="max-w-[480px] md:mb-0 mb-10 md:mr-24">
+                <p class="text-base font-medium text-gray-2 md:mb-8 mb-3">Whether it is the product or the business itself, it should shine through at first sight. Great businesses and remarkable products deserve the best software craftsmanship, pixel-perfect technical usability and the highest quality of code in web development.</p>
+                <a href="" class="flex items-center text-cerulean-500 space-x-3 text-base font-medium" style="display: none">
+                    <span>Learn more</span>
+                    <img data-src="./assets/icons/arrow-right.svg" alt="">
+                </a>
+            </div>
+            <div class="grid md:grid-cols-4 grid-cols-3 gap-y-6 gap-x-4 w-full" style="height: max-content">
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/react.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">React</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/type-script.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">TypeScript</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/angular.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Angular</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/vue.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Vue</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/java-script.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">JavaScript</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/git.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Git</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/sass.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Sass</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/graphql.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">GraphQL</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/storybook.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Storybook</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/webpack.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Webpack</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/gulp.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Gulp</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/jest.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Jest</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile technologies-tab">
+            <div class="max-w-[480px] md:mb-0 mb-10 md:mr-24">
+                <p class="text-base font-medium text-gray-2 md:mb-8 mb-3">We develop not only eye-catching and user-oriented interfaces, but also performance mobile applications for iOS and Android that offer the perfect experience in all interfaces in a sustainable and scalable way.</p>
+                <a href="" class="flex items-center text-cerulean-500 space-x-3 text-base font-medium" style="display: none">
+                    <span>Learn more</span>
+                    <img data-src="./assets/icons/arrow-right.svg" alt="">
+                </a>
+            </div>
+            <div class="grid md:grid-cols-4 grid-cols-3 gap-y-6 gap-x-4 w-full" style="height: max-content">
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/react-native.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">React Native</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/node-js.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">TypeScript</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/firebase.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Firebase</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/mix-panel.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Mixpanel</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/one-signal.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">OneSignal</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/detox.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Detox</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/branch.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Branch</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/graphql.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">GraphQL</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/prettier.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Prettier</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/flutter.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Flutter</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/kotlin.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Kotlin</div>
+                </div>
+                <div class="flex items-center">
+                    <img data-src="./assets/images/technologies/java.png" class="lazy" alt="">
+                    <div class="text-sm font-medium text-gray-2 tracking-[.02em] ml-2">Java</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui_ux technologies-tab">
+            <div class="max-w-[480px] md:mb-0 mb-10 md:mr-24">
+                <p class="text-base font-medium text-gray-2 md:mb-8 mb-3">We provide to create human-computer interactions using the latest technologies and design trends. By taking part in every stage of product development, we analyze users and design meaningful interfaces for the target.</p>
+                <a href="" class="flex items-center text-cerulean-500 space-x-3 text-base font-medium" style="display: none">
+                    <span>Learn more</span>
+                    <img data-src="./assets/icons/arrow-right.svg" class="lazy" alt="">
+                </a>
+            </div>
+            <div class="w-full grid md:grid-cols-3 grid-cols-2 gap-y-6 gap-x-10" style="height: max-content">
+                <div class="text-sm font-medium text-gray-2 tracking-[.02em] max-w-[180px] w-full">User Experience Design</div>
+                <div class="text-sm font-medium text-gray-2 tracking-[.02em] max-w-[180px] w-full">User Interface Design</div>
+                <div class="text-sm font-medium text-gray-2 tracking-[.02em] max-w-[180px] w-full">Interaction Design</div>
+                <div class="text-sm font-medium text-gray-2 tracking-[.02em] max-w-[180px] w-full">Responsive Design</div>
+                <div class="text-sm font-medium text-gray-2 tracking-[.02em] max-w-[180px] w-full">Wireframing</div>
+                <div class="text-sm font-medium text-gray-2 tracking-[.02em] max-w-[180px] w-full">Prototyping</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="case-studies"></div>
+<div class="md:mt-[140px] mt-20 max-w-[1180px] mx-auto md:px-0 px-6">
+    <div class="heading-title md:mb-20 mb-8">case studies</div>
+    <div class="flex md:flex-row flex-col md:items-center justify-between md:mb-[72px] mb-10">
+        <h2 class="md:mb-0 mb-4">Our projects with unique experience.</h2>
+        <div class="flex items-center md:justify-start justify-end space-x-4">
+            <button id="case-study-prev-btn" class="h-10 w-10 flex items-center justify-center rounded-full border border-gray-4">
+                <img data-src="./assets/icons/arrow-left.svg" class="lazy passive" alt="">
+
+                <img data-src="./assets/icons/arrow-right.svg" class="lazy active hidden transform rotate-180" alt="">
+            </button>
+            <button id="case-study-next-btn" class="h-10 w-10 flex items-center justify-center rounded-full border border-cerulean-500">
+                <img data-src="./assets/icons/arrow-right.svg" class="lazy" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div class="case-studies-slider flex gap-x-1">
+        <div class="relative text-white w-full md:h-[550px] h-[440px] p-10 pr-0 md:mr-4 bg-cover lazy" data-bg="./assets/images/case-studies/kitapyurdu.png">
+            <h3 class="text-3xl font-bold mb-2">Kitapyurdu</h3>
+            <p class="text-lg font-medium">E-Commerce</p>
+            <a href="javascript:void(0)" onclick="showModal('#kitapyurdu-case-study-modal')" class="absolute bottom-10 left-8 px-4 py-2 border border-white rounded-sm font-medium text-lg hover:bg-white hover:text-gray-1">Download Case Study</a>
+        </div>
+        <div class="relative text-white w-full md:h-[550px] h-[440px] p-10 pr-0 md:mr-4 bg-cover lazy" data-bg="./assets/images/case-studies/kommunity.png">
+            <h3 class="text-3xl font-bold mb-2">Kommunity</h3>
+            <p class="text-lg font-medium">All in one social event platform</p>
+            <a href="javascript:void(0)" onclick="showModal('#kommunity-case-study-modal')" class="absolute bottom-10 left-8 px-4 py-2 border border-white rounded-sm font-medium text-lg hover:bg-white hover:text-gray-1">Download Case Study</a>
+        </div>
+        <div class="relative text-white w-full md:h-[550px] h-[440px] p-10 pr-0 md:mr-4 bg-cover lazy" data-bg="./assets/images/case-studies/karaca.png">
+            <h3 class="text-3xl font-bold mb-2">Karaca</h3>
+            <p class="text-lg font-medium">E-Commerce</p>
+            <a href="javascript:void(0)" onclick="showModal('#karaca-case-study-modal')" class="absolute bottom-10 left-8 px-4 py-2 border border-white rounded-sm font-medium text-lg hover:bg-white hover:text-gray-1">Download Case Study</a>
+        </div>
+        <div class="relative text-white w-full md:h-[550px] h-[440px] p-10 pr-0 md:mr-4 bg-cover lazy" data-bg="./assets/images/case-studies/transiyzi.png">
+            <h3 class="text-3xl font-bold mb-2">Transiyzi</h3>
+            <p class="text-lg font-medium">Localization SaaS</p>
+            <a href="javascript:void(0)" onclick="showModal('#transiyzi-case-study-modal')" class="absolute bottom-10 left-8 px-4 py-2 border border-white rounded-sm font-medium text-lg hover:bg-white hover:text-gray-1">Download Case Study</a>
+        </div>
+    </div>
+</div>
+<div class="md:mt-[140px] mt-20 max-w-[1180px] mx-auto md:px-0 px-6">
+    <div class="heading-title md:mb-20 mb-12">happy clients</div>
+    <div class="md:flex md:flex-wrap grid grid-cols-2 max-w-[1152px] mx-auto gap-y-4 md:gap-x-0 gap-x-4">
+        <div class="border-b border-gray-5 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/kommunity.png" class="lazy current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/kommunity-black.png" class="lazy black lazy" alt="">
+            </div>
+        </div>
+        <div class="md:block hidden mx-4 w-px h-[118px] bg-gray-5"></div>
+        <div class="border-b border-gray-5 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/zorlu.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/zorlu-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+        <div class="md:block hidden mx-4 w-px h-[118px] bg-gray-5"></div>
+        <div class="border-b border-gray-5 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/karaca.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/karaca-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+        <div class="md:block hidden mx-4 w-px h-[118px] bg-gray-5"></div>
+        <div class="border-b border-gray-5 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/kitapyurdu.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/kitapyurdu-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+        <div class="md:block hidden mx-4 w-px h-[118px] bg-gray-5"></div>
+        <div class="border-b border-gray-5 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/vispera.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/vispera-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+
+        <div class="border-b border-gray-5 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/genc-sigorta.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/genc-sigorta-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+        <div class="md:block hidden mx-4 w-px h-[118px] bg-gray-5"></div>
+        <div class="border-b border-gray-5 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/teknasyon.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/teknasyon-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+        <div class="md:block hidden mx-4 w-px h-[118px] bg-gray-5"></div>
+        <div class="border-b border-gray-5 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/duguncom.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/duguncom-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+        <div class="md:block hidden mx-4 w-px h-[118px] bg-gray-5"></div>
+        <div class="border-b border-gray-5 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/isbak.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/isbak-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+        <div class="md:block hidden mx-4 w-px h-[118px] bg-gray-5"></div>
+        <div class="border-b border-gray-5 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/netlog.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/netlog-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+
+        <div class="border-b border-gray-5 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/conectohub.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/conectohub-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+        <div class="md:block hidden mx-4 w-px h-[118px] bg-gray-5"></div>
+        <div class="border-b border-gray-5 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/transiyzi.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/transiyzi-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+        <div class="md:block hidden mx-4 w-px h-[118px] bg-gray-5"></div>
+        <div class="border-b border-gray-5 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/nettunett.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/nettunet-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+        <div class="md:block hidden mx-4 w-px h-[118px] bg-gray-5"></div>
+        <div class="border-b border-gray-5 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/anneysencom.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/anneysencom-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+        <div class="md:block hidden mx-4 w-px h-[118px] bg-gray-5"></div>
+        <div class="border-b border-gray-5 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/dcey.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/dcey-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+
+        <div class="md:border-b-0 border-b border-gray-5 md:pb-0 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/akrepcom.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/akrepcom-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+        <div class="md:block hidden mx-4 w-px h-[118px] bg-gray-5"></div>
+        <div class="md:border-b-0 border-b border-gray-5 md:pb-0 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/yeniben.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/yeniben-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+        <div class="md:block hidden mx-4 w-px h-[118px] bg-gray-5"></div>
+        <div class="md:border-b-0 border-b border-gray-5 md:pb-0 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/penguen.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/penguen-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+        <div class="md:block hidden mx-4 w-px h-[118px] bg-gray-5"></div>
+        <div class="md:border-b-0 border-b border-gray-5 md:pb-0 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/ability-pool.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/ability-pool-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+        <div class="md:block hidden mx-4 w-px h-[118px] bg-gray-5"></div>
+        <div class="md:border-b-0 border-b border-gray-5 md:pb-0 pb-4">
+            <div class="md:min-w-[204px] md:max-w-auto max-w-[160px] md:h-[118px] h-24 flex items-center justify-center happy-client-box">
+                <img data-src="./assets/images/happy-clients/dynorender.png" class="current lazy" alt="">
+                <img data-src="./assets/images/happy-clients/dynorender-black.png" class="black lazy" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="md:mt-28 mt-20 md:px-0 px-6 max-w-[1180px] mx-auto">
+    <div class="testimonials-slider">
+        <div>
+            <div class="flex md:flex-row flex-col justify-center items-center">
+                <div class="md:max-w-[380px] md:mr-24">
+                    <div class="heading-title mb-8">Testimonials</div>
+                    <h4 class="font-medium md:mb-8 mb-4">Teknasyon</h4>
+                    <p class="text-lg font-medium text-gray-2 md:mb-10 mb-6">They were always looking for other ways to help us — it felt like a real partnership. </p>
+                    <div class="text-base md:mb-8">
+                        <div class="font-bold text-cerulean-500">FATİH ÜSTÜNDAĞ</div>
+                        <div class="font-semibold text-gray-2">Teknasyon, CTO</div>
+                    </div>
+
+                </div>
+                <img data-src="./assets/images/testimonials/fatih-ustundag.png" class="lazy" alt="">
+            </div>
+        </div>
+        <div>
+            <div class="flex md:flex-row flex-col justify-center items-center">
+                <div class="md:max-w-[380px] md:mr-24">
+                    <div class="heading-title mb-8">Testimonials</div>
+                    <h4 class="font-medium md:mb-8 mb-4">Düğün.com</h4>
+                    <p class="text-lg font-medium text-gray-2 md:mb-10 mb-6">It has been a pleasure to work with such a steady, supportive and flexible development partner. </p>
+                    <div class="text-base md:mb-8">
+                        <div class="font-bold text-cerulean-500">MÜMİN AYDIN</div>
+                        <div class="font-semibold text-gray-2">Düğün.com, CTO</div>
+                    </div>
+
+                </div>
+                <img data-src="./assets/images/testimonials/mumin-aydin.png" class="lazy" alt="">
+            </div>
+        </div>
+        <div>
+            <div class="flex md:flex-row flex-col justify-center items-center">
+                <div class="md:max-w-[380px] md:mr-24">
+                    <div class="heading-title mb-8">Testimonials</div>
+                    <h4 class="font-medium md:mb-8 mb-4">Kitapyurdu</h4>
+                    <p class="text-lg font-medium text-gray-2 md:mb-10 mb-6">They are determined, passionate, and unbelievably committed to your success as a company. </p>
+                    <div class="text-base md:mb-8">
+                        <div class="font-bold text-cerulean-500">SADİ KİZİR</div>
+                        <div class="font-semibold text-gray-2">Kitapyurdu, CEO</div>
+                    </div>
+                </div>
+                <img data-src="./assets/images/testimonials/sadi-kiriz.png" class="lazy" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-[800px] mx-auto relative md:-top-6 md:mt-0 mt-6">
+        <div class="flex md:justify-start justify-center items-center space-x-4">
+            <button id="testimonial-prev-btn" class="h-10 w-10 flex items-center justify-center rounded-full border border-gray-4">
+                <img data-src="./assets/icons/arrow-left.svg" class="lazy passive" alt="">
+
+                <img data-src="./assets/icons/arrow-right.svg" class="lazy active hidden transform rotate-180" alt="">
+            </button>
+            <button id="testimonial-next-btn" class="h-10 w-10 flex items-center justify-center rounded-full border border-cerulean-500">
+                <img data-src="./assets/icons/arrow-right.svg" class="lazy" alt="">
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="md:flex hidden justify-end max-w-[1180px] mx-auto -mb-24">
+    <button class="rounded-full p-2 bg-royalblue-100" onclick="window.scrollTo(0, 0)">
+        <img src="./assets/icons/chevron-up.svg" alt="">
+    </button>
+</div>
+<div id="contact"></div>
+<div class="md:mt-[140px] mt-20 bg-royalblue-0 md:pt-20 pt-12 md:pb-24 pb-16 relative md:px-0 px-6">
+    <div class="max-w-[580px] mx-auto relative z-10">
+        <h2 class="md:text-[52px] text-4xl md:leading-[60px]">Have an idea?</h2>
+        <h2 class="md:text-[52px] text-4xl md:leading-[60px] text-cerulean-500">Let's develop together.</h2>
+    </div>
+    <img data-src="./assets/images/footer-vector.png" class="lazy absolute left-0 right-0 bottom-0 w-full" alt="">
+</div>
+<footer class="bg-primary md:pt-20 pt-10 md:pb-[110px] pb-16 md:px-0 px-6">
+    <div class="max-w-[1180px] mx-auto flex md:flex-row flex-col justify-between">
+        <div class="md:mb-0 mb-10">
+            <div class="mb-6">
+                <img data-src="./assets/images/logo.svg" class="lazy" alt="">
+            </div>
+            <div class="max-w-[564px]">
+                <div class="text-base font-medium text-gray-3 md:mb-8 mb-5">Outsource Software & Product Development Company</div>
+                <div class="max-w-[448px]">
+                    <div class="flex md:flex-row flex-col md:items-center justify-between md:pr-6 md:mb-8 mb-3 md:gap-y-0 gap-y-3">
+                        <a href="tel:+902129510992" class="flex items-center">
+                            <img data-src="./assets/icons/phone.svg" class="lazy" alt="">
+                            <div class="text-gray-6 font-medium text-base ml-4">+90 212 951 09 92</div>
+                        </a>
+                        <a href="mailto:hello@itsmoneo.com" class="flex items-center">
+                            <img data-src="./assets/icons/mail-filled.svg" class="lazy" alt="">
+                            <div class="text-gray-6 font-medium text-base ml-4">hello@itsmoneo.com</div>
+                        </a>
+                    </div>
+                    <a href="https://goo.gl/maps/HDGZpj3VrMNVApzKA" target="_blank" rel="noreferrer" class="flex items-center">
+                        <img data-src="./assets/icons/round-place.svg" class="lazy" alt="">
+                        <div class="text-gray-6 font-medium text-base ml-4">Muallimköy Mh. Deniz Cd. No:143/5 41400 Gebze/Kocaeli</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="text-white text-base font-semibold mb-4">Follow us</div>
+            <div class="flex items-center gap-4 -ml-2">
+                <a href="https://kommunity.com/moneo" target="_blank" rel="noreferrer">
+                    <img data-src="./assets/icons/kommunity.svg" class="lazy" alt="">
+                </a>
+                <a href="https://twitter.com/itsmoneo" target="_blank" rel="noreferrer" class="p-1.5">
+                    <img data-src="./assets/icons/twitter.svg" class="lazy" alt="">
+                </a>
+                <a href="https://www.linkedin.com/company/itsmoneo" target="_blank" rel="noreferrer">
+                    <img data-src="./assets/icons/linkedin.svg" class="lazy" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
 </footer>
 
-<script src="/assets/js/vendor.js"></script>
-<script src="/assets/js/app.js"></script>
-<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
-<script src="/assets/js/search.js"></script>
+<div id="kommunity-case-study-modal" class="fixed z-10 inset-0 overflow-y-auto ease-in-out duration-300 opacity-0 hidden"
+     aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 bg-black bg-opacity-70 transition-opacity" onclick="hideModal('#kommunity-case-study-modal')"
+             aria-hidden="true"></div>
+
+        <!-- This element is to trick the browser into centering the modal contents. -->
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+        <div class="modal-content inline-block align-bottom bg-primary rounded-lg md:p-8 text-left transform transition-all sm:my-16 sm:align-middle md:bg-cover bg-contain w-full max-w-[980px] md:bg-[url('./assets/images/modal-kommunity.png')]">
+            <div class="flex md:flex-row flex-col justify-between items-end">
+                <div class="md:p-0 px-6 pt-8 pb-10 w-full relative">
+                    <button class="p-2 bg-gray-6 rounded md:hidden block absolute right-2 top-2 z-10" onclick="hideModal('#kommunity-case-study-modal')">
+                        <img data-src="./assets/icons/carbon-close.svg" class="lazy" alt="">
+                    </button>
+                    <img data-src="./assets/images/modal-kommunity-mobile.jpg" class="lazy rounded-t-lg md:hidden block absolute inset-0 z-0" alt="">
+                    <h3 class="md:mb-4 mb-1 md:font-bold font-semibold md:text-4xl text-2xl text-yellow relative z-10">
+                        Kommunity
+                    </h3>
+                    <p class="relative z-10 md:text-base text-xs md:font-medium font-semibold md:tracking-normal tracking-[.02em] text-gray-6">Community-focused social event platform.</p>
+                </div>
+                <div class="rounded bg-white p-6 max-w-[400px] w-full">
+                    <div class="mb-8">
+                        <h5 class="font-semibold tracking-[.02em] mb-2 text-gray-1">Get Case Study</h5>
+                        <p class="text-[13px] text-gray-1 tracking-[-.02em]">Enter your information to get Case Study.</p>
+                    </div>
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfPLsL3MPnWfBV9wh5U1LPb6108e_HBPi2_jzFdG4P988Jtxw/formResponse" method="POST" target="_self">
+                        <div class="grid grid-cols-12 gap-x-4 gap-y-6">
+                            <div class="md:col-span-6 col-span-12">
+                                <label for="name" class="block text-xs font-semibold text-gray-1 tracking-[.02em]">Name</label>
+                                <div class="mt-1">
+                                    <input type="text" name="entry.54685580" id="name" class="block w-full rounded border border-gray-6 text-sm font-medium text-gray-1 h-10 px-4 focus:outline-none" required>
+                                </div>
+                            </div>
+                            <div class="md:col-span-6 col-span-12">
+                                <label for="surname" class="block text-xs font-semibold text-gray-1 tracking-[.02em]">Surname</label>
+                                <div class="mt-1">
+                                    <input type="text" name="entry.959008127" id="surname" class="block w-full rounded border border-gray-6 text-sm font-medium text-gray-1 h-10 px-4 focus:outline-none" required>
+                                </div>
+                            </div>
+                            <div class="col-span-12">
+                                <label for="email" class="block text-xs font-semibold text-gray-1 tracking-[.02em]">Email</label>
+                                <div class="mt-1">
+                                    <input type="email" name="entry.2058954037" id="email" class="block w-full rounded border border-gray-6 text-sm font-medium text-gray-1 h-10 px-4 focus:outline-none" required>
+                                </div>
+                            </div>
+                            <div class="col-span-12">
+                                <label for="phone" class="block text-xs font-semibold text-gray-1 tracking-[.02em]">Phone Number <span class="text-gray-4">(Optional)</span></label>
+                                <div class="mt-1">
+                                    <input type="tel" name="entry.1002127973" id="phone" class="block w-full rounded border border-gray-6 text-sm font-medium text-gray-1 h-10 px-4 focus:outline-none">
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="entry.1171493097" value="Kommunity">
+                        <button type="submit" class="w-full text-center bg-cerulean-500 hover:bg-cerulean-700 rounded py-4 text-[13px] text-gray-6 tracking-[-.02em] mt-8">Download Case Study</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="kitapyurdu-case-study-modal" class="fixed z-10 inset-0 overflow-y-auto ease-in-out duration-300 opacity-0 hidden"
+     aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 bg-black bg-opacity-70 transition-opacity" onclick="hideModal('#kitapyurdu-case-study-modal')"
+             aria-hidden="true"></div>
+
+        <!-- This element is to trick the browser into centering the modal contents. -->
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+        <div class="modal-content inline-block align-bottom bg-primary rounded-lg md:p-8 text-left transform transition-all sm:my-16 sm:align-middle md:bg-cover w-full max-w-[980px] md:bg-[url('./assets/images/modal-kitapyurdu.png')]">
+            <div class="flex md:flex-row flex-col justify-between items-end">
+                <div class="md:p-0 px-6 pt-8 pb-10 w-full relative">
+                    <button class="p-2 bg-gray-6 rounded md:hidden block absolute right-2 top-2 z-10" onclick="hideModal('#kitapyurdu-case-study-modal')">
+                        <img data-src="./assets/icons/carbon-close.svg" class="lazy" alt="">
+                    </button>
+                    <img data-src="./assets/images/modal-kitapyurdu-mobile.jpg" class="lazy rounded-t-lg md:hidden block absolute inset-0 z-0" alt="">
+                    <h3 class="md:mb-4 mb-1 md:font-bold font-semibold md:text-4xl text-2xl text-yellow relative z-10">
+                        Kitapyurdu
+                    </h3>
+                    <p class="relative z-10 md:text-base text-xs md:font-medium font-semibold md:tracking-normal tracking-[.02em] text-gray-6">Turkey's largest book sales platform.</p>
+                </div>
+                <div class="md:rounded bg-white p-6 max-w-[400px] w-full">
+                    <div class="mb-8">
+                        <h5 class="font-semibold tracking-[.02em] mb-2 text-gray-1">Get Case Study</h5>
+                        <p class="text-[13px] text-gray-1 tracking-[-.02em]">Enter your information to get Case Study.</p>
+                    </div>
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfPLsL3MPnWfBV9wh5U1LPb6108e_HBPi2_jzFdG4P988Jtxw/formResponse" method="POST" target="_self">
+                        <div class="grid grid-cols-12 gap-x-4 gap-y-6">
+                            <div class="md:col-span-6 col-span-12">
+                                <label for="name" class="block text-xs font-semibold text-gray-1 tracking-[.02em]">Name</label>
+                                <div class="mt-1">
+                                    <input type="text" name="entry.54685580" id="name" class="block w-full rounded border border-gray-6 text-sm font-medium text-gray-1 h-10 px-4 focus:outline-none" required>
+                                </div>
+                            </div>
+                            <div class="md:col-span-6 col-span-12">
+                                <label for="surname" class="block text-xs font-semibold text-gray-1 tracking-[.02em]">Surname</label>
+                                <div class="mt-1">
+                                    <input type="text" name="entry.959008127" id="surname" class="block w-full rounded border border-gray-6 text-sm font-medium text-gray-1 h-10 px-4 focus:outline-none" required>
+                                </div>
+                            </div>
+                            <div class="col-span-12">
+                                <label for="email" class="block text-xs font-semibold text-gray-1 tracking-[.02em]">Email</label>
+                                <div class="mt-1">
+                                    <input type="email" name="entry.2058954037" id="email" class="block w-full rounded border border-gray-6 text-sm font-medium text-gray-1 h-10 px-4 focus:outline-none" required>
+                                </div>
+                            </div>
+                            <div class="col-span-12">
+                                <label for="phone" class="block text-xs font-semibold text-gray-1 tracking-[.02em]">Phone Number <span class="text-gray-4">(Optional)</span></label>
+                                <div class="mt-1">
+                                    <input type="tel" name="entry.1002127973" id="phone" class="block w-full rounded border border-gray-6 text-sm font-medium text-gray-1 h-10 px-4 focus:outline-none">
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="entry.1171493097" value="Kitapyurdu">
+                        <button type="submit" class="w-full text-center bg-cerulean-500 hover:bg-cerulean-700 rounded py-4 text-[13px] text-gray-6 tracking-[-.02em] mt-8">Download Case Study</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="karaca-case-study-modal" class="fixed z-10 inset-0 overflow-y-auto ease-in-out duration-300 opacity-0 hidden"
+     aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 bg-black bg-opacity-70 transition-opacity" onclick="hideModal('#karaca-case-study-modal')"
+             aria-hidden="true"></div>
+
+        <!-- This element is to trick the browser into centering the modal contents. -->
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+        <div class="modal-content inline-block align-bottom bg-primary rounded-lg md:p-8 text-left transform transition-all sm:my-16 sm:align-middle md:bg-cover bg-contain w-full max-w-[980px] md:bg-[url('./assets/images/modal-karaca.png')]">
+            <div class="flex md:flex-row flex-col justify-between items-end">
+                <div class="md:p-0 px-6 pt-8 pb-10 w-full relative">
+                    <button class="p-2 bg-gray-6 rounded md:hidden block absolute right-2 top-2 z-10" onclick="hideModal('#karaca-case-study-modal')">
+                        <img data-src="./assets/icons/carbon-close.svg" class="lazy" alt="">
+                    </button>
+                    <img data-src="./assets/images/modal-karaca-mobile.jpg" class="lazy rounded-t-lg md:hidden block absolute inset-0" alt=" z-0">
+                    <h3 class="md:mb-4 mb-1 md:font-bold font-semibold md:text-4xl text-2xl text-[#FFF8F4] relative z-10">
+                        Karaca
+                    </h3>
+                    <p class="relative z-10 md:text-base text-xs md:font-medium font-semibold md:tracking-normal tracking-[.02em] text-gray-6">Karaca has been Turkey's leading manufacturer and seller of household products since 1973.</p>
+                </div>
+                <div class="rounded bg-white p-6 max-w-[400px] w-full">
+                    <div class="mb-8">
+                        <h5 class="font-semibold tracking-[.02em] mb-2 text-gray-1">Get Case Study</h5>
+                        <p class="text-[13px] text-gray-1 tracking-[-.02em]">Enter your information to get Case Study.</p>
+                    </div>
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfPLsL3MPnWfBV9wh5U1LPb6108e_HBPi2_jzFdG4P988Jtxw/formResponse" method="POST" target="_self">
+                        <div class="grid grid-cols-12 gap-x-4 gap-y-6">
+                            <div class="md:col-span-6 col-span-12">
+                                <label for="name" class="block text-xs font-semibold text-gray-1 tracking-[.02em]">Name</label>
+                                <div class="mt-1">
+                                    <input type="text" name="entry.54685580" id="name" class="block w-full rounded border border-gray-6 text-sm font-medium text-gray-1 h-10 px-4 focus:outline-none" required>
+                                </div>
+                            </div>
+                            <div class="md:col-span-6 col-span-12">
+                                <label for="surname" class="block text-xs font-semibold text-gray-1 tracking-[.02em]">Surname</label>
+                                <div class="mt-1">
+                                    <input type="text" name="entry.959008127" id="surname" class="block w-full rounded border border-gray-6 text-sm font-medium text-gray-1 h-10 px-4 focus:outline-none" required>
+                                </div>
+                            </div>
+                            <div class="col-span-12">
+                                <label for="email" class="block text-xs font-semibold text-gray-1 tracking-[.02em]">Email</label>
+                                <div class="mt-1">
+                                    <input type="email" name="entry.2058954037" id="email" class="block w-full rounded border border-gray-6 text-sm font-medium text-gray-1 h-10 px-4 focus:outline-none" required>
+                                </div>
+                            </div>
+                            <div class="col-span-12">
+                                <label for="phone" class="block text-xs font-semibold text-gray-1 tracking-[.02em]">Phone Number <span class="text-gray-4">(Optional)</span></label>
+                                <div class="mt-1">
+                                    <input type="tel" name="entry.1002127973" id="phone" class="block w-full rounded border border-gray-6 text-sm font-medium text-gray-1 h-10 px-4 focus:outline-none">
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="entry.1171493097" value="Karaca">
+                        <button type="submit" class="w-full text-center bg-cerulean-500 hover:bg-cerulean-700 rounded py-4 text-[13px] text-gray-6 tracking-[-.02em] mt-8">Download Case Study</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="transiyzi-case-study-modal" class="fixed z-10 inset-0 overflow-y-auto ease-in-out duration-300 opacity-0 hidden"
+     aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 bg-black bg-opacity-70 transition-opacity" onclick="hideModal('#transiyzi-case-study-modal')"
+             aria-hidden="true"></div>
+
+        <!-- This element is to trick the browser into centering the modal contents. -->
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+        <div class="modal-content inline-block align-bottom bg-primary rounded-lg md:p-8 text-left transform transition-all sm:my-16 sm:align-middle md:bg-cover bg-contain w-full max-w-[980px] md:bg-[url('./assets/images/modal-transiyzi.png')]">
+            <div class="flex md:flex-row flex-col justify-between items-end">
+                <div class="md:p-0 px-6 pt-8 pb-10 w-full relative">
+                    <button class="p-2 bg-gray-6 rounded md:hidden block absolute right-2 top-2 z-10" onclick="hideModal('#transiyzi-case-study-modal')">
+                        <img data-src="./assets/icons/carbon-close.svg" class="lazy" alt="">
+                    </button>
+                    <img data-src="./assets/images/modal-transiyzi-mobile.png" class="lazy rounded-t-lg md:hidden block absolute inset-0" alt=" z-0">
+                    <h3 class="md:mb-4 mb-1 md:font-bold font-semibold md:text-4xl text-2xl text-royalblue-200 relative z-10">
+                        Transiyzi
+                    </h3>
+                    <p class="relative z-10 md:text-base text-xs md:font-medium font-semibold md:tracking-normal tracking-[.02em] text-gray-6">Softwares, websites, blogs, mobile applications, localize anything you want in your own domain.</p>
+                </div>
+                <div class="rounded bg-white p-6 max-w-[400px] w-full">
+                    <div class="mb-8">
+                        <h5 class="font-semibold tracking-[.02em] mb-2 text-gray-1">Get Case Study</h5>
+                        <p class="text-[13px] text-gray-1 tracking-[-.02em]">Enter your information to get Case Study.</p>
+                    </div>
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfPLsL3MPnWfBV9wh5U1LPb6108e_HBPi2_jzFdG4P988Jtxw/formResponse" method="POST" target="_self">
+                        <div class="grid grid-cols-12 gap-x-4 gap-y-6">
+                            <div class="md:col-span-6 col-span-12">
+                                <label for="name" class="block text-xs font-semibold text-gray-1 tracking-[.02em]">Name</label>
+                                <div class="mt-1">
+                                    <input type="text" name="entry.54685580" id="name" class="block w-full rounded border border-gray-6 text-sm font-medium text-gray-1 h-10 px-4 focus:outline-none" required>
+                                </div>
+                            </div>
+                            <div class="md:col-span-6 col-span-12">
+                                <label for="surname" class="block text-xs font-semibold text-gray-1 tracking-[.02em]">Surname</label>
+                                <div class="mt-1">
+                                    <input type="text" name="entry.959008127" id="surname" class="block w-full rounded border border-gray-6 text-sm font-medium text-gray-1 h-10 px-4 focus:outline-none" required>
+                                </div>
+                            </div>
+                            <div class="col-span-12">
+                                <label for="email" class="block text-xs font-semibold text-gray-1 tracking-[.02em]">Email</label>
+                                <div class="mt-1">
+                                    <input type="email" name="entry.2058954037" id="email" class="block w-full rounded border border-gray-6 text-sm font-medium text-gray-1 h-10 px-4 focus:outline-none" required>
+                                </div>
+                            </div>
+                            <div class="col-span-12">
+                                <label for="phone" class="block text-xs font-semibold text-gray-1 tracking-[.02em]">Phone Number <span class="text-gray-4">(Optional)</span></label>
+                                <div class="mt-1">
+                                    <input type="tel" name="entry.1002127973" id="phone" class="block w-full rounded border border-gray-6 text-sm font-medium text-gray-1 h-10 px-4 focus:outline-none">
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="entry.1171493097" value="Transiyzi">
+                        <button type="submit" class="w-full text-center bg-cerulean-500 hover:bg-cerulean-700 rounded py-4 text-[13px] text-gray-6 tracking-[-.02em] mt-8">Download Case Study</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script>
+    const heroSlider = tns({
+        container: '.hero-slider',
+        items: 1,
+        responsive: {
+            768: {
+                fixedWidth: 604,
+            }
+        },
+        slideBy: 'page',
+        loop: true,
+        center: false,
+        rewind: false,
+        mouseDrag: false,
+        swipeAngle: false,
+        controls: true,
+        autoplay: false,
+        nav: false,
+        autoplayButtonOutput: false,
+        prevButton: '#hero-prev-btn',
+        nextButton: '#hero-next-btn'
+    });
+
+    const heroPrevBtn = document.getElementById('hero-prev-btn');
+    // bind function to event
+    heroSlider.events.on('indexChanged', function (e) {
+        updatePrevBtnStyle(e, heroPrevBtn);
+    });
+
+    const heroSliderTitle = document.getElementById('hero-slider-title');
+    // bind function to event
+    heroSlider.events.on('indexChanged', function (e) {
+        if (window.innerWidth > 768) {
+            document.querySelector('.hero-slider .tns-slide-active .backdrop').classList.add('passive');
+            document.querySelectorAll('.hero-slider .tns-item:not(.tns-slide-active) .backdrop').forEach(item => {
+                item.classList.remove('passive');
+            });
+        }
+
+        if (e.displayIndex == 1) {
+            heroSliderTitle.innerText = 'Karaca';
+        } else if (e.displayIndex == 2) {
+            heroSliderTitle.innerText = 'Kitapyurdu';
+        } else if (e.displayIndex == 3) {
+            heroSliderTitle.innerText = 'Kommunity';
+        }
+    });
+
+    const workflowSlider = tns({
+        container: '.workflow-slider',
+        items: 1,
+        responsive: {
+            768: {
+                fixedWidth: 366,
+                items: 3,
+            },
+        },
+        slideBy: 1,
+        loop: false,
+        rewind: true,
+        mouseDrag: false,
+        swipeAngle: false,
+        controls: true,
+        autoplay: false,
+        nav: false,
+        autoplayButtonOutput: false,
+        prevButton: '#workflow-prev-btn',
+        nextButton: '#workflow-next-btn'
+    });
+
+    const workflowPrevBtn = document.getElementById('workflow-prev-btn');
+    // bind function to event
+    workflowSlider.events.on('indexChanged', function (e) {
+        updatePrevBtnStyle(e, workflowPrevBtn);
+    });
+
+    const caseStudiesSlider = tns({
+        container: '.case-studies-slider',
+        items: 1,
+        responsive: {
+            768: {
+                fixedWidth: 350,
+            },
+        },
+        slideBy: 1,
+        loop: true,
+        center: false,
+        rewind: true,
+        mouseDrag: false,
+        swipeAngle: false,
+        controls: true,
+        autoplay: false,
+        nav: false,
+        autoplayButtonOutput: false,
+        prevButton: '#case-study-prev-btn',
+        nextButton: '#case-study-next-btn'
+    });
+
+    const caseStudyPrevBtn = document.getElementById('case-study-prev-btn');
+    // bind function to event
+    caseStudiesSlider.events.on('indexChanged', function (e) {
+        updatePrevBtnStyle(e, caseStudyPrevBtn);
+    });
+
+    const testimonialsSlider = tns({
+        container: '.testimonials-slider',
+        items: 1,
+        slideBy: 'page',
+        loop: true,
+        rewind: true,
+        mouseDrag: false,
+        swipeAngle: false,
+        controls: true,
+        autoplay: false,
+        nav: false,
+        autoplayButtonOutput: false,
+        prevButton: '#testimonial-prev-btn',
+        nextButton: '#testimonial-next-btn'
+    });
+
+    const testimonialPrevBtn = document.getElementById('testimonial-prev-btn');
+    // bind function to event
+    testimonialsSlider.events.on('indexChanged', function (e) {
+        updatePrevBtnStyle(e, testimonialPrevBtn);
+    });
 
 
+    function updatePrevBtnStyle(e, btn) {
+        if (e.displayIndex > 1) {
+            btn.classList.remove('border-gray-4');
+            btn.classList.add('border-cerulean-500');
+
+            btn.querySelector('.passive').classList.add('hidden');
+            btn.querySelector('.active').classList.remove('hidden');
+        } else {
+            btn.classList.add('border-gray-4');
+            btn.classList.remove('border-cerulean-500');
+
+            btn.querySelector('.passive').classList.remove('hidden');
+            btn.querySelector('.active').classList.add('hidden');
+        }
+    }
+
+    function changeActiveTab(item) {
+        const activeTabBtn = document.querySelector('.technologies-tab-btn.active');
+        activeTabBtn.classList.remove('active');
+        const tabBtn = document.querySelector('.technologies-tab-btn.'+item);
+        tabBtn.classList.add('active');
+
+        const activeTab = document.querySelector('.technologies-tab.active');
+        activeTab.classList.remove('active');
+        const tab = document.querySelector('.technologies-tab.'+item);
+        tab.classList.add('active');
+    }
+</script>
+
+<script>
+    const body = document.querySelector('body');
+    function showModal(element) {
+        body.classList.add('overflow-hidden');
+
+        const modal = document.querySelector(element);
+        modal.classList.remove('hidden');
+
+        setTimeout(function () {
+            modal.classList.remove('opacity-0');
+            modal.classList.add('opacity-100');
+        }, 10);
+
+        let event = new CustomEvent(`modal-show`);
+        document.dispatchEvent(event);
+    }
+
+    function hideModal(element) {
+        body.classList.remove('overflow-hidden');
+
+        const modal = document.querySelector(element);
+        modal.classList.remove('opacity-100');
+        modal.classList.add('opacity-0');
+
+        setTimeout(function () {
+            modal.classList.add('hidden');
+        }, 300);
+
+        let event = new CustomEvent(`${element.replace('#', '')}-modal-hide`);
+        document.dispatchEvent(event);
+
+        document.dispatchEvent(new CustomEvent(`modal-hide`));
+    }
+
+    function readMore(e, selector) {
+        const item = document.querySelector(selector);
+        if (item.classList.contains('active')) {
+            item.classList.add('line-clamp-3', 'text-ellipsis');
+            item.classList.remove('active');
+
+            e.children[0].innerHTML = 'Read more';
+
+            e.children[1].classList.remove('rotate-180');
+            e.children[1].classList.add('rotate-0');
+        } else {
+            item.classList.add('active');
+            item.classList.remove('line-clamp-3', 'text-ellipsis');
+
+            e.children[0].innerHTML = 'Read less';
+
+            e.children[1].classList.remove('rotate-0');
+            e.children[1].classList.add('rotate-180');
+        }
+    }
+</script>
+
+<script>
+    var lazyLoadInstance = new LazyLoad({
+        // Your custom settings go here
+    });
+
+    lazyLoadInstance.update();
+</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63786228-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
